@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Stevens CakeShop</title>
+	<meta name="description" content="A Touch of Magic">
+	<meta name="keywords" content="A Touch of Magic, signature cakes, iced cakes, birthday cakes, wedding cakes, cakes for kids">
+
+
+	<link href="../../public/images/logo.png" rel="icon">
+
+	<link href="public/css/style.css" rel="stylesheet" type="text/css">
+	<link href="public/css/modal.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+	<div id="wrapper">
+		{{> menuStevensshop}}
+		<div id="content">
+			<h2> My Signature Cakes </h2>
+			<div class="table">
+				<ul>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/signature cakes/signaturecake1.jpg" alt="description" width="200" height="200" />
+						</a>
+						<button id="myBtn">Signture Cake 1st</button>
+						<div id="myModal" class="modal">
+
+							<!-- modal -->
+							<div class="modal-content">
+								<div class="modal-header">
+									<span class="close">×</span>
+									<h2>signature Cake 1</h2>
+								</div>
+								<div class="modal-body">
+									<p>Price: $25.99</p>
+									<p>Material：Strawberry </p>
+								</div>
+								<div class="modal-footer">
+									<a href='order'>Order Now!</a>
+								</div>
+							</div>
+
+						</div>
+						<script>  
+							//   
+							const modal = document.getElementById('myModal');
+
+							//   
+							const btn = document.getElementById("myBtn");
+
+							//  that closes the modal  
+							const span = document.getElementsByClassName("close")[0];
+
+							// open  
+							btn.onclick = function () {
+								modal.style.display = "block";
+							}
+
+							// close  
+							span.onclick = function () {
+								modal.style.display = "none";
+							}
+
+							// Close when user click other places  
+							window.onclick = function (event) {
+								if (event.target == modal) {
+									modal.style.display = "none";
+								}
+							}  
+						</script>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/signature cakes/signaturecake2.jpg" alt="description" width="200" height="200" />
+						</a>
+						
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/signature cakes/signaturecake3.jpg" alt="description" width="200" height="200" />
+						</a>
+						
+					</li>
+				</ul>
+				<p class="more clear">
+					<a href="signaturecakes"> Click here for more...</a>
+				</p>
+			</div>
+			<hr class="style18">
+			<h2> My Collection of Iced Cakes </h2>
+			<div class="table">
+				<ul>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/iced collection/icedCake1.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/iced collection/icedCake2.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/iced collection/icedCake3.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+				</ul>
+				<p class="more clear">
+					<a href="icedcakes"> Click here for more...</a>
+				</p>
+			</div>
+			<hr class="style18">
+			<h2> Birthday Cakes </h2>
+			<div class="table">
+				<ul>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/birthday cakes/bdayCake1.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/birthday cakes/bdayCake2.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/birthday cakes/bdayCake3.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+				</ul>
+				<p class="more clear">
+					<a href="bdaycakes"> Click here for more...</a>
+				</p>
+			</div>
+			<hr class="style18">
+			<h2> Christening Cakes </h2>
+			<div class="table">
+				<ul>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/christening cakes/christeningCake1.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/christening cakes/christeningCake2.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/christening cakes/christeningCake3.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+				</ul>
+				<p class="more clear">
+					<a href="christeningcakes"> Click here for more...</a>
+				</p>
+			</div>
+			<hr class="style18">
+			<h2> Cakes for Kids </h2>
+			<div class="table">
+				<ul>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/kids cakes/kidCake1.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/kids cakes/kidCake2.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../../public/images/kids cakes/kidCake3.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+				</ul>
+				<p class="more clear">
+					<a href="kidscakes"> Click here for more...</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<h1> Stevens CakeShop </h1>
+		<p class="copyright"> &copy; 2018
+			<br> Designed by Pengfei Yao, Jiayi Liu, Zihao Peng, Fanyu Wang </p>
+	</div>
+
+
+</body>
+
+</html>

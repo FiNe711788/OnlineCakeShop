@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Stevens CakeShop</title>
+	<link href="../public/images/logo.png" rel="icon">
+
+	<link href="../public/css/style.css" rel="stylesheet" type="text/css">
+
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div id="wrapper">
+		{{> menuStevensshop}}
+		<div id="content">
+			<h2 class="cakename">Children Cakes</h2>
+			<div class="table">
+				<ul>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake1.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake2.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake3.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid clear">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake4.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake5.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake6.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid clear">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake7.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake8.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake9.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid clear">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake10.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake11.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+					<li class="polaroid">
+						<a href="#">
+							<img src="../public/images/kids cakes/kidCake12.jpg" alt="description" width="200" height="200" />
+						</a>
+					</li>
+				</ul>
+				<hr>
+				<div id="comments">
+					{{#each comments}} {{> comment }} {{/each}}
+				</div>
+				{{#if login}} {{> commentform }}
+				<hr> {{/if}}
+				<p class="more clear">
+					<a href="cakes"> Go back to Cakes page...</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<h1> Stevens CakeShop </h1>
+		<p class="copyright"> &copy; 2018
+			<br> Designed by Pengfei Yao, Jiayi Liu, Zihao Peng, Fanyu Wang </p>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	 crossorigin="anonymous"></script>
+	<script src="../../public/js/comments.js"></script>
+
+
+</body>
+
+</html>
